@@ -1,0 +1,10 @@
+.main {
+    height: 100vh;
+    display: grid;
+    grid-template: 20% 10% auto / auto auto auto;
+    grid-template-areas: 
+    "header header header"
+    "input-section . ."
+    "main-section main-section total-section";
+    gap: 1rem 2rem;
+}

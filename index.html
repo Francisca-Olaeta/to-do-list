@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío To Do List</title>
+    <!-- CSS only -->
+<link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    
+
+        <!--Contenedor padre-->
+        <!-------------------------------------------------------------------------------------------------------------------------------------->
+        <div class="container main">
+                <!--Header-->
+                <header>
+                    <h1>To Do List</h1>
+                </header>
+                
+                <!--Input-section-->
+                <div class="input-section">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control input" name="input-tarea" placeholder="Nueva tarea" aria-label="" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Agregar</button>
+                    </div>
+                </div>
+                
+                
+                <!--Main-section(tablas)-->
+                <div class="main-section">
+                    <div class="tabla-1 p-3 mb-3">
+                        <h2>Tareas ingresadas:</h2>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nombre tarea</th>
+                                    <th>Check</th>
+                                </tr>
+                            </thead>
+                            <tbody id="resumen" class="table-light">
+        
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div class="tabla-2 p-3">
+                        <h3>Tareas realizadas</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nombre tarea</th>
+                                    <th>Check</th>
+                                </tr>
+                            </thead>
+                            <tbody id="finalizadas" class="table-success">
+        
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                    <!--Total-section-->
+                <div id="total" class="border total-section p-3">
+                    <h4>Total de tareas: <span id="totalTareas"></span></h4>
+                    <h4>Tareas realizadas: <span id="totalTareasFinalizadas"></span></h4>
+                </div>
+                
+    
+            </div>
+            <!-------------------------------------------------------------------------------------------------------------------------------------->
+    
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
